@@ -2,8 +2,8 @@ import React from 'react';
 import '@testing-library/jest-dom';
 import { shallow, ShallowWrapper } from 'enzyme';
 
-import GifGridItem from '../components/GifGridItem';
-import { Gif } from '../shared/interfaces';
+import GifGridItem from '../../components/GifGridItem';
+import { Gif } from '../../shared/interfaces';
 
 const gif: Gif = {
   id: '0',
