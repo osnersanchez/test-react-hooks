@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterApp test suite should render default template when default properties are set 1`] = `
+<div
+  className="card-item animate__animated animate__bounceIn"
+>
+  <div
+    className="content-img"
+  >
+    <img
+      alt="test"
+      src="http://tets"
+    />
+  </div>
+  <p>
+    test
+  </p>
+</div>
+`;
