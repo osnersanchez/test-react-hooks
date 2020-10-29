@@ -10,15 +10,19 @@ const AddCategory = ({ setCategories }: PropsTypes) => {
   const handleinputChange = (e: ChangeEvent<HTMLInputElement>) => setInputValue(e.target.value);
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setCategories((categories: string[]) => [inputValue, ...categories]);
-    setInputValue('');
+
+    if (inputValue.trim().length > 2) {
+      setCategories((categories: string[]) => [inputValue, ...categories]);
+      setInputValue('');
+    }
   };
 
   return (
-    <form onSubmit={ handleSubmit }>
+    <form onSubmit={handleSubmit}>
+      <p>{inputValue}</p>
       <input
-        value={ inputValue }
-        onChange={ handleinputChange }
+        value={inputValue}
+        onChange={handleinputChange}
         type="text"
       />
     </form>
