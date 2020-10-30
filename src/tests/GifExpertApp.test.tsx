@@ -12,7 +12,7 @@ describe('GitExpertApp test suite', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  test('should render default template when default properties are set', () => {
+  test('should render default template when inputs properties are set', () => {
     const categories = ['One Push', 'Dragon Ball'];
 
     const wrapper: ShallowWrapper = shallow(<GitExpertApp defaultCategory={categories} />);
